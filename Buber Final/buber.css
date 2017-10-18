@@ -1,0 +1,219 @@
+* {margin: 0;
+   padding: 0;
+}
+
+
+body {
+  background-image: url(dark_tint.png), url(ams_bike.jpeg);
+  background-size: cover;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 100;
+}
+
+
+/*BUBER - Home*/
+h1 {
+    text-align: center;
+    position: absolute;
+    top: 380px;
+    left: 42.5%;
+    width: 200px;
+    height: 50px;
+}
+
+
+/* Home SERVICES bar*/
+.navigation1{
+    font: bold;
+    font-size: 28px;
+    position: absolute;
+    top: 200px;
+    left: 980px;
+    width: 200px;
+    height: 50px;
+}
+
+
+/* Home CONTACT US bar*/
+.navigation2 { 
+    font: bold;
+    font-size: 28px;
+    position: absolute;
+    top: 200px;
+    left: 80px;
+    width: 200px;
+    height: 50px;
+}
+
+
+/*BUBER ICON ROTATION FX*/
+.rotation{
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   width: 120px;
+   height: 120px;
+   margin:-60px 0 0 -60px;
+}
+
+.rotation img:hover {
+    -webkit-animation: mymove 1s infinite;
+    animation: mymove 1s infinite;
+}
+
+@keyframes mymove {
+    from   {    transform: rotateZ(0deg);}
+    to { transform: rotateZ(360deg);}
+}
+
+
+/* MAP - CONTACT US */
+#map {
+    height: 400px;
+    width: 40%;
+    margin-left: 50%;
+    position: absolute;
+    top: 150px;
+}
+
+
+/* Main Navigation bar */
+.navigation { 
+    position: fixed;
+    background-color: white;
+    float: right;
+    width: 100%;
+    opacity: .5;
+    box-shadow: 0px 8px 6px -6px;
+}
+
+.navigation li{
+    display: inline;
+    margin-right: 20px;
+    float: right;
+    color: black;
+    position: relative;
+}
+
+#home ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    overflow: hidden;
+    padding-bottom: 15px;
+    width: 300px;
+}
+
+#home ul li {
+    float: right;
+    width: 300px;
+    height: 40px;
+    opacity: .8;
+    color: black;
+    text-align: center;
+}
+
+li a {
+    display: inline-grid;
+    text-align: center;
+    color: black;
+    padding: 14px 30px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: black;
+    color: white;
+}
+
+li {
+    float: right;
+}
+
+
+/* SERVICES Images and Text */
+.servImg {
+   display: inline-block;
+   margin-left: 55px;
+}
+
+.servText {
+    text-align: left;
+    color: white; 
+    text-shadow: 2px 2px black;
+    padding: 60px;
+}
+
+
+/* ~ContactUs Text */
+.contUsText {
+    text-align: left;
+    color: white; 
+    text-shadow: 2px 2px black;
+    padding-top: 155px;
+    padding-left: 100px;
+}
+
+
+@media (max-width: 700px){
+    .servText {
+        padding-top: 130px;
+        color: #BDB76B;
+        text-shadow: 2px 2px black;
+        width: 100%;
+    }
+
+    .contUsText {
+        text-align: left;
+        color: #BDB76B; 
+        text-shadow: 2px 2px black;
+        padding-top: 155px;
+        padding-left: 100px;
+    }
+
+    .servImg {
+        width: 100%;
+        margin-left: 30px;
+    }  
+
+    .navigation li {
+        bottom: 230px;
+        right: 0px;
+        top: 0px;
+        padding-top: 0px;
+        height: 70px;
+        width: 100px;
+    }
+
+    .navigation1 {
+        width: 200px;
+        left: 500px;
+        right: -100;
+    }
+
+    .navigation2 {
+        left: 0px;
+    }
+
+    h1 {
+        width: 100%;
+        left: 250px;
+    }
+
+    .rotation {
+        left: 180px;
+        bottom: 0px;
+        top: 90px;
+        margin: 0;
+    }
+
+    #map {
+        height: 100px;
+        width: 40%;
+        margin-left: 50%;
+        position: absolute;
+        top: 600px;
+    }
+
+}

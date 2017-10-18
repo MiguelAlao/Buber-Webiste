@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>CONTACT US</title>
+    <meta name="viewport" content="width=device=width" initial-scale=1>
+</head>
+
+<link rel="stylesheet" type="text/css" href="buber.css">
+
+<body>
+    <nav class="navigation">
+      <ul>
+        <li><a href="contactUs.html">CONTACT US</a></li>
+        <li><a href="services.html">SERVICES</a></li>
+        <li><a href="home.html">HOME</a></li>
+      </ul>
+    </nav>
+
+   <div class="contUsText">
+      <h3>Address 1:<br>
+      Johan Huizingalaan 763A,<br>
+      1066 VH Amsterdam</h3>
+      <br>    
+      <h3>Address 2:<br>
+      John M. Keynesplein 12-46,<br>
+      1066 EP Amsterdam</h3>
+      <br>
+
+      <h3>
+        <form action="/action_page.php">
+          Name:<br>
+          <input type="text" name="Name" value="">
+          <br>
+          Email:<br>
+          <input type="text" name="Email" value="">
+          <br>
+          Message:<br>
+          <input type="text" name="message" value="">
+          <br><br>
+          <input type="submit" value="Submit"><br>
+        </form> 
+      </h3>
+  </div>   
+
+  <div id="map">
+    <script>
+        function initMap() {
+        var myLatLng = {lat: 52.343079, lng: 4.829259};
+
+        var map = new google.maps.Map(document.getElementById('map'), {
+        zoom: 15,
+        center: myLatLng
+        });
+
+        var marker = new google.maps.Marker({
+        position: myLatLng,
+        map: map,
+        title: 'Address'
+        });
+        }
+    </script>
+
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAUjn3Ps7_v1InHWhNHBNxVPP4PudXiS3Q&callback=initMap"></script>
+  </div>
+
+</body>
+</html>
